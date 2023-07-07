@@ -11,15 +11,10 @@ h6 {
   font-weight: bold;
   font-family: var(--text-font-family);
 }
-.header-logo {
-  color: #000000;
-  font-size: 26px;
-  font-family: "Raleway", "sans-serif";
-  font-weight: 700;
-  letter-spacing: 0.78px;
-}
-.header-half-logo {
-  color: #2196f3;
+.container-header-container .header-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header-link {
   color: #212121;
@@ -30,6 +25,17 @@ h6 {
 }
 .header-link:hover,
 .header-link:focus {
+  color: #2196f3;
+}
+
+.header-logo {
+  color: #000000;
+  font-size: 26px;
+  font-family: "Raleway", "sans-serif";
+  font-weight: 700;
+  letter-spacing: 0.78px;
+}
+.header-half-logo {
   color: #2196f3;
 }
 
@@ -75,6 +81,11 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #006994;
+}
+.header-container {
+  display: flex;
+}
+.header-logo {
 }
 .main-services {
   color: #212121;

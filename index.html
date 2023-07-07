@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&display=swap"
@@ -14,27 +19,39 @@
 </head>
 
 <body>
-    <header>
-        <a class="header-logo" href=""><span class="header-half-logo">Web</span>Studio</a>
-        <nav>
-            <!--Contacts-->
-            <ul>
-                <li><a class="header-link" href="studio">Studio</a></li>
-                <li><a class="header-link" href="./portofolio.html">Portfolio</a></li>
-                <li><a class="header-link" href="contacts">Contacts</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contact" href="tel:+12127724150">+1 212-772-4150</a></li>
-        </ul>
-    </header>
+    <!--Header-->
+    <div class="container-header-container">
+        <header>
+            <aside>
+                <a class="header-logo" href=""><span class="header-half-logo">Web</span>Studio</a>
+            </aside>
+
+
+            <nav>
+
+                <ul class="header-link">
+                    <li><a class="header-link" href="studio">Studio</a></li>
+                    <li><a class="header-link" href="./portofolio.html">Portfolio</a></li>
+                    <li><a class="header-link" href="contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="header-contact" href="tel:+12127724150">+1 212-772-4150</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
 
     <main>
+        <!--Main section title and button-->
         <section class="hero">
             <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
             <button class="hero-button" type="button">Request our service</button>
         </section>
+        <!--Main services-->
         <section>
             <h2>Our services</h2>
             <ul>
@@ -67,6 +84,7 @@
 
         </section>
         <section>
+            <!--Second section description of services-->
             <h2>What we do</h2>
             <ul>
                 <li><img src="./images/laptop.jpg" alt="laptop" width="370" height="294"></li>
@@ -81,29 +99,29 @@
                 <li>
                     <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260">
                     <h3 class="team-names">Christopher Walker</h3>
-                    <p class="team-ocupation"> Product Designer</p>
+                    <em class="team-ocupation"> Product Designer</em>
                 </li>
                 <li>
                     <img src="./images/frontenddeveloper.jpg" alt="Frontend Developer" width="270" height="260">
                     <h3 class="team-names">Kylie Evans</h3>
-                    <p class="team-ocupation">Frontend Developer</p>
+                    <em class="team-ocupation">Frontend Developer</em>
                 </li>
 
                 <li>
                     <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260">
                     <h3 class="team-names">Ryan Harris</h3>
-                    <p class="team-ocupation">Marketing</p>
+                    <em class="team-ocupation">Marketing</em>
                 </li>
                 <li>
                     <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260">
                     <h3 class="team-names">Tyler Moore</h3>
-                    <p class="team-ocupation">UI Designer </p>
+                    <em class="team-ocupation">UI Designer </em>
                 </li>
             </ul>
         </section>
 
     </main>
-
+    <!--Footer section-->
     <footer class="footer-section">
 
         <ul>
