@@ -11,11 +11,29 @@ h6 {
   font-weight: bold;
   font-family: var(--text-font-family);
 }
-.container-header-container .header-link {
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.hero {
+  background-color: #2f303a;
+}
+
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
 .header-link {
   color: #212121;
   font-size: 14px;
@@ -34,28 +52,36 @@ h6 {
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   letter-spacing: 0.78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-half-logo {
   color: #2196f3;
 }
 
-.header-contact {
+.header-cont-link {
   color: var(--link-color);
   font-size: 14px;
   font-family: var(--text-font-family);
   font-weight: 500;
   letter-spacing: 0.28px;
 }
-.header-contact:hover,
-.header-contact:focus {
+.header-cont-link:hover,
+.header-cont-link:focus {
   color: #2196f3;
 }
-ul {
-  list-style-type: none;
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
-
 .hero {
-  background-color: #2f303a;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   color: #fff;
@@ -66,6 +92,8 @@ ul {
   line-height: 1.3;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  max-width: 696px;
+  padding-top: 200px;
 }
 .hero-button {
   color: #fff;
@@ -77,16 +105,13 @@ ul {
   letter-spacing: 0.96px;
   background: #2196f3;
   cursor: pointer;
+  padding: 10px 20px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #006994;
 }
-.header-container {
-  display: flex;
-}
-.header-logo {
-}
+
 .main-services {
   color: #212121;
   font-size: 14px;
@@ -94,6 +119,13 @@ ul {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  display: flex;
+  width: 270px;
+  height: 16px;
+}
+.services-list {
+  display: flex;
+  gap: 30px;
 }
 .service-description {
   color: var(--link-color);
@@ -101,6 +133,16 @@ ul {
   font-family: var(--text-font-family);
   line-height: 1, 7;
   letter-spacing: 0.42px;
+  max-width: 270px;
+}
+.section-services {
+  display: flex;
+  text-align: center;
+}
+
+.images-list {
+  display: flex;
+  flex-direction: row;
 }
 .team-names {
   color: #212121;

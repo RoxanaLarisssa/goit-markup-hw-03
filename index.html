@@ -20,26 +20,22 @@
 
 <body>
     <!--Header-->
-    <div class="container-header-container">
-        <header>
-            <aside>
-                <a class="header-logo" href=""><span class="header-half-logo">Web</span>Studio</a>
-            </aside>
+    <div class="container">
+        <header class="header">
 
-
-            <nav>
-
-                <ul class="header-link">
-                    <li><a class="header-link" href="studio">Studio</a></li>
-                    <li><a class="header-link" href="./portofolio.html">Portfolio</a></li>
-                    <li><a class="header-link" href="contacts">Contacts</a></li>
-                </ul>
-            </nav>
+            <a class="header-logo" href=""><span class="header-half-logo">Web</span>Studio</a>
             <div>
-                <ul>
-                    <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="header-contact" href="tel:+12127724150">+1 212-772-4150</a></li>
-                </ul>
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li><a class="header-link" href="studio">Studio</a></li>
+                        <li><a class="header-link" href="./portofolio.html">Portfolio</a></li>
+                        <li><a class="header-link" href="contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contact">
+                <a class="header-cont-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-cont-link" href="tel:+12127724150">+1 212-772-4150</a>
             </div>
         </header>
     </div>
@@ -47,93 +43,97 @@
 
     <main>
         <!--Main section title and button-->
-        <section class="hero">
-            <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-            <button class="hero-button" type="button">Request our service</button>
-        </section>
+        <div class="container">
+            <section class="hero">
+                <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+                <button class="hero-button" type="button">Request our service</button>
+            </section>
+        </div>
+
         <!--Main services-->
-        <section>
-            <h2>Our services</h2>
-            <ul>
-                <li>
-                    <h3 class="main-services">ATTENTION TO DETAILS</h3>
-                    <p class="service-description">We go into all the details and processes of your business to develop
-                        a customized solution.</p>
-                </li>
-                <li>
-                    <h3 class="main-services">PUNCTUALITY</h3>
-                    <p class="service-description">With us, you can feel safe and secure. An important principle of the
-                        company: respect your time
-                        and deadlines.</p>
-                </li>
+        <div class="container">
+            <section class="services">
+                <h2 hidden>Our services</h2>
+                <ul class="services-list">
+                    <li>
+                        <h3 class="main-services">ATTENTION TO DETAILS</h3>
+                        <p class="service-description">We go into all the details and processes of your business to
+                            develop a customized solution.</p>
+                    </li>
+                    <li>
+                        <h3 class="main-services">PUNCTUALITY</h3>
+                        <p class="service-description">With us, you can feel safe and secure. An important principle of
+                            the company: respect your time and deadlines.</p>
+                    </li>
+                    <li>
+                        <h3 class="main-services">PLANNING</h3>
+                        <p class="service-description">You will be able to observe and participate in every phase of
+                            solution development and implementation.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="main-services">MODERN TECHNOLOGIES</h3>
+                        <p class="service-description">We use innovative tools to solve assigned tasks. It's time to
+                            simplify work processes.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!--Second section description of services-->
+        <div class="container">
+            <section class="section-services">
+                <h2>What we do</h2>
+                <ul class="images-list">
+                    <li><img src="./images/laptop.jpg" alt="laptop" width="370" height="294"></li>
+                    <li><img src="./images/apps.jpg" alt="apps" width="370" height="294"></li>
+                    <li><img src="./images/tablet.jpg" alt="tablet" width="370" height="294"></li>
+                </ul>
+            </section>
 
-                <li>
-                    <h3 class="main-services">PLANNING</h3>
-                    <p class="service-description">You will be able to observe and participate in every phase of
-                        solution development and
-                        implementation.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="main-services">MODERN TECHNOLOGIES</h3>
-                    <p class="service-description">We use innovative tools to solve assigned tasks. It's time to
-                        simplify work processes.</p>
-                </li>
-            </ul>
+            <section>
+                <h2>Our Team</h2>
+                <ul>
+                    <li>
+                        <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260">
+                        <h3 class="team-names">Christopher Walker</h3>
+                        <em class="team-ocupation"> Product Designer</em>
+                    </li>
+                    <li>
+                        <img src="./images/frontenddeveloper.jpg" alt="Frontend Developer" width="270" height="260">
+                        <h3 class="team-names">Kylie Evans</h3>
+                        <em class="team-ocupation">Frontend Developer</em>
+                    </li>
 
-
-        </section>
-        <section>
-            <!--Second section description of services-->
-            <h2>What we do</h2>
-            <ul>
-                <li><img src="./images/laptop.jpg" alt="laptop" width="370" height="294"></li>
-                <li><img src="./images/apps.jpg" alt="apps" width="370" height="294"></li>
-                <li><img src="./images/tablet.jpg" alt="tablet" width="370" height="294"></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Our Team</h2>
-            <ul>
-                <li>
-                    <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260">
-                    <h3 class="team-names">Christopher Walker</h3>
-                    <em class="team-ocupation"> Product Designer</em>
-                </li>
-                <li>
-                    <img src="./images/frontenddeveloper.jpg" alt="Frontend Developer" width="270" height="260">
-                    <h3 class="team-names">Kylie Evans</h3>
-                    <em class="team-ocupation">Frontend Developer</em>
-                </li>
-
-                <li>
-                    <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260">
-                    <h3 class="team-names">Ryan Harris</h3>
-                    <em class="team-ocupation">Marketing</em>
-                </li>
-                <li>
-                    <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260">
-                    <h3 class="team-names">Tyler Moore</h3>
-                    <em class="team-ocupation">UI Designer </em>
-                </li>
-            </ul>
-        </section>
+                    <li>
+                        <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260">
+                        <h3 class="team-names">Ryan Harris</h3>
+                        <em class="team-ocupation">Marketing</em>
+                    </li>
+                    <li>
+                        <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260">
+                        <h3 class="team-names">Tyler Moore</h3>
+                        <em class="team-ocupation">UI Designer </em>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
     </main>
     <!--Footer section-->
-    <footer class="footer-section">
+    <div class="container">
+        <footer class="footer-section">
 
-        <ul>
-            <li> <a class="footer-logo" href="WebStudio"><span
-                        class="footer-half-logo">Web</span><span>Studio</span></a></li>
-            <li>
-                <address class="footer-address">695 Park Ave, NY 10065, USA</address>
-            </li>
-            <li><a class="footer-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="footer-contacts" href="Tel:+12127724150">+1 212-772-4150 </a></li>
-        </ul>
-    </footer>
+            <ul>
+                <li> <a class="footer-logo" href="WebStudio"><span
+                            class="footer-half-logo">Web</span><span>Studio</span></a></li>
+                <li>
+                    <address class="footer-address">695 Park Ave, NY 10065, USA</address>
+                </li>
+                <li><a class="footer-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="footer-contacts" href="Tel:+12127724150">+1 212-772-4150 </a></li>
+            </ul>
+        </footer>
+    </div>
 
 </body>
 
