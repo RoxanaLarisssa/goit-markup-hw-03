@@ -25,14 +25,14 @@ ul {
   width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
-}
-.hero {
-  background-color: #2f303a;
-}
-
+} /*--------------HEADER-----------*/
 .header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-list {
   display: flex;
@@ -40,7 +40,10 @@ ul {
   justify-content: center;
   gap: 50px;
 }
-
+.img {
+  display: block;
+  max-width: 100%;
+}
 .header-link {
   color: #212121;
   font-size: 14px;
@@ -83,12 +86,13 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 40px;
-}
+} /*---------------------HERO----------------------***/
 .hero {
   height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2f303a;
 }
 .hero-title {
   color: #fff;
@@ -101,6 +105,7 @@ ul {
   text-transform: uppercase;
   max-width: 696px;
   padding-top: 200px;
+  padding-bottom: 40px;
 }
 .hero-button {
   color: #fff;
@@ -113,12 +118,16 @@ ul {
   background: #2196f3;
   cursor: pointer;
   padding: 10px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #006994;
 }
-
+/*-------------Main Services----------------*/
+.services {
+  padding-top: 94px;
+}
 .main-services {
   color: #212121;
   font-size: 14px;
@@ -127,6 +136,7 @@ ul {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   display: flex;
+  padding-bottom: 10px;
 }
 .services-list {
   display: flex;
@@ -141,7 +151,9 @@ ul {
   letter-spacing: 0.42px;
   max-width: 270px;
 }
-
+.team-section {
+  background: #f5f4fa;
+}
 .section-tittle {
   padding-top: 94px;
   color: #212121;
@@ -156,6 +168,14 @@ ul {
   gap: 30px;
   margin-top: 50px;
 }
+/*--------------TEAM-----------------*/
+.team-list {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+}
+
 .team-names {
   color: #212121;
   text-align: center;
@@ -174,6 +194,7 @@ ul {
 
 .team-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-tittle {
   color: #212121;
@@ -188,11 +209,13 @@ ul {
   display: flex;
   gap: 30px;
 }
-
+/*----------Footer--------------*/
 .footer-container {
   display: flex;
-  justify-content: center;
-  border-style: solid;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  max-width: 100%;
 }
 .footer-section {
   display: flex;
@@ -202,11 +225,15 @@ ul {
   width: 100%;
 }
 .footer-logo {
+  display: flex;
   color: #ffffff;
   font-size: 26px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 0.78px;
+  margin-bottom: 28px;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 28px;
 }
 .footer-half-logo {
@@ -222,34 +249,42 @@ ul {
   margin-bottom: 12px;
 }
 .footer-contacts {
+  display: flex;
+  flex-direction: column;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-family: var(--text-font-family);
   letter-spacing: 0.42px;
   margin-bottom: 12px;
+  gap: 12px;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: #2196f3;
 }
+/*!----------------------PORTFOLIO--------------------------!*/
 .main-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 94px;
+  border: 1px solid transparent;
 }
 .portofolio-button {
-  border-radius: 4px;
-  background: #f5f4fa;
+  display: flex;
   text-align: center;
   font-size: 16px;
   font-family: var(--text-font-family);
   font-weight: 500;
   letter-spacing: 0.48px;
   border: grey;
-  background: #f5f4fa;
   margin-right: 6px;
   padding: 8px;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: #f5f4fa;
 }
 .portofolio-button:hover,
 .portofolio-button:focus {
@@ -261,6 +296,9 @@ ul {
   flex-wrap: wrap;
   flex-direction: row;
   padding-top: 50px;
+  padding-bottom: 94px;
+  gap: 20px;
+  width: 100%;
 }
 .portofolio-tittle {
   color: #212121;
@@ -269,6 +307,7 @@ ul {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
+  padding-top: 20px;
 }
 .portofolio-description {
   color: #757575;
@@ -276,7 +315,9 @@ ul {
   font-family: var(--text-font-family);
   line-height: 1, 8;
   letter-spacing: 0.48px;
+  margin-bottom: 20px;
 }
-.portofolio-images li {
-  box-shadow: 0px 0px 0px 1px #eee inset;
+.portofolio-box {
+  border: 1px solid #eee;
+  border-top: none;
 }
