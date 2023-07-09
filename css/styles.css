@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "Border-box";
+}
+
 :root {
   --link-color: #757575;
   --text-font-family: "Roboto", "sans-serif";
 }
+
 h1,
 h2,
 h3,
@@ -183,6 +190,9 @@ ul {
 }
 
 .footer-container {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
 }
 .footer-section {
   display: flex;
@@ -222,6 +232,12 @@ ul {
 .footer-contacts:focus {
   color: #2196f3;
 }
+.main-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 94px;
+}
 .portofolio-button {
   border-radius: 4px;
   background: #f5f4fa;
@@ -230,15 +246,22 @@ ul {
   font-family: var(--text-font-family);
   font-weight: 500;
   letter-spacing: 0.48px;
-  cursor: pointer;
-  color: #212121;
+  border: grey;
+  background: #f5f4fa;
+  margin-right: 6px;
+  padding: 8px;
 }
 .portofolio-button:hover,
 .portofolio-button:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
-
+.portofolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 50px;
+}
 .portofolio-tittle {
   color: #212121;
   font-size: 18px;
@@ -253,4 +276,7 @@ ul {
   font-family: var(--text-font-family);
   line-height: 1, 8;
   letter-spacing: 0.48px;
+}
+.portofolio-images li {
+  box-shadow: 0px 0px 0px 1px #eee inset;
 }
