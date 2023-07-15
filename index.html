@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -33,9 +34,14 @@
                 </nav>
             </div>
             <div class="header-contact">
-                <a class="header-cont-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="header-cont-link" href="tel:+12127724150">+1 212-772-4150</a>
+                <a class="header-cont-link" href="mailto:info@devstudio.com"> <i data-feather="mail"
+                        class="contact-adress-icon"></i></i>
+                    info@devstudio.com</a>
+                <a class="header-cont-link" href="tel:+12127724150"> <i data-feather="smartphone" class="contact-adress-icon"></i> +1
+                    212-772-4150</a>
+
             </div>
+
         </header>
     </div>
 
@@ -55,22 +61,49 @@
                 <h2 hidden>Our services</h2>
                 <ul class="services-list">
                     <li>
+                        <div class="services-icons">
+                            <svg width="70" height="70">
+                                <use href="./icons/symbol-defs.svg#icon-antenna">
+                        
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="main-services">ATTENTION TO DETAILS</h3>
                         <p class="service-description">We go into all the details and processes of your business to
                             develop a customized solution.</p>
                     </li>
                     <li>
+                        <div class="services-icons">
+                            <svg width="70" height="70">
+                                <use href=" ./icons/symbol-defs.svg#icon-clock">
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="main-services">PUNCTUALITY</h3>
                         <p class="service-description">With us, you can feel safe and secure. An important principle of
                             the company: respect your time and deadlines.</p>
                     </li>
                     <li>
+                        <div class="services-icons">
+                            <svg width="70" height="70">
+                                <use href="./icons/symbol-defs.svg#icon-diagram">
+                        
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="main-services">PLANNING</h3>
                         <p class="service-description">You will be able to observe and participate in every phase of
                             solution development and implementation.
                         </p>
                     </li>
                     <li>
+                        <div class="services-icons">
+                            <svg width="70" height="70">
+                                <use href="./icons/symbol-defs.svg#icon-astronaut">
+                        
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="main-services">MODERN TECHNOLOGIES</h3>
                         <p class="service-description">We use innovative tools to solve assigned tasks. It's time to
                             simplify work processes.</p>
@@ -99,30 +132,208 @@
                         <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260">
                         <h3 class="team-names">Christopher Walker</h3>
                         <p class="team-ocupation"> Product Designer</p>
+                        <div class="icons-list">
+                            <a href="https://www.instagram.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-instagram">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-twitter">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-facebook">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://gb.linkedin.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-linkedin">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </li>
                     <li class="team-images">
                         <img src="./images/frontenddeveloper.jpg" alt="Frontend Developer" width="270" height="260">
                         <h3 class="team-names">Kylie Evans</h3>
                         <p class="team-ocupation">Frontend Developer</p>
+                        <div class="icons-list">
+                            <a href="https://www.instagram.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-instagram">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-twitter">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-facebook">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://gb.linkedin.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-linkedin">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </li>
 
                     <li class="team-images">
                         <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260">
                         <h3 class="team-names">Ryan Harris</h3>
                         <p class="team-ocupation">Marketing</p>
+                        <div class="icons-list">
+                            <a href="https://www.instagram.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-instagram">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-twitter">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-facebook">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://gb.linkedin.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-linkedin">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </li>
                     <li class="team-images">
                         <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260">
                         <h3 class="team-names">Tyler Moore</h3>
                         <p class="team-ocupation">UI Designer</p>
+                        <div class="icons-list">
+                            <a href="https://www.instagram.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-instagram">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-twitter">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-facebook">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="https://gb.linkedin.com" class="icon">
+                                <svg>
+                                    <use href="./icons/symbol-defs.svg#icon-linkedin">
+                        
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </li>
                 </ul>
             </section>
         </div>
+    <!--Customers-->
+    <section class="customers">
+        <div class="container">
+    
+            <h2 class="customers-tittle">Regular Customers</h2>
+    
+            <ul class="customers-list-icons">
+                <li class="ctmrs-item-icons">
+                    <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                        <svg class="customers-icon" width="104" height="56">
+                            <use href="./icons/symbol-defs.svg#icon-Logo-caset"></use>
+                        </svg>
+                    </a>
+                </li>
+    
+                <li class="ctmrs-item-icons">
+                    <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                        <svg class="customers-icon" width="104" height="56">
+                            <use href="./icons/symbol-defs.svg#icon-company-logo"></use>
+                        </svg>
+                    </a>
+                </li>
+    
+                <li class="ctmrs-item-icons">
+                    <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                        <svg class="customers-icon" width="104" height="56">
+                            <use href="./icons/symbol-defs.svg#icon-company-round"></use>
+                        </svg>
+                    </a>
+                </li>
 
+                    <li class="ctmrs-item-icons">
+                        <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./icons/symbol-defs.svg#icon-Logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ctmrs-item-icons">
+                        <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./icons/symbol-defs.svg#icon-brand"></use>
+                            </svg>
+                        </a>
+                    </li>
 
+                    <li class="ctmrs-item-icons">
+                        <a class="custmers-icons" href="" aria-label="logo-first" target="_blank" rel="noopener noreferrer">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./icons/symbol-defs.svg#icon-company-tag-line"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    </ul>
 
+            </div>
 
+        </section>
     </main>
     <!--Footer section-->
     <div class="container">
@@ -136,9 +347,12 @@
                 <li><a class="footer-contacts" href="emailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="footer-contacts" href="Tel:+12127724150">+1 212-772-4150 </a></li>
             </ul>
+            
         </footer>
     </div>
-
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
